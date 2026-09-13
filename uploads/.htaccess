@@ -1,0 +1,8 @@
+# 上传目录禁止直接访问，所有文件须通过 media.php 鉴权读取
+Require all denied
+Deny from all
+Options -ExecCGI -Indexes
+php_flag engine off
+<IfModule mod_php.c>
+  php_admin_flag engine off
+</IfModule>

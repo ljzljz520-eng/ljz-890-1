@@ -1,0 +1,5 @@
+# Apache 安全规则（Nginx 请参考 README 中的配置）
+# 禁止直接访问数据库
+<FilesMatch "\.(sqlite|sqlite3|db)$">
+  Require all denied
+</FilesMatch>

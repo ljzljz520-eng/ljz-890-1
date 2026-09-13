@@ -23,3 +23,14 @@ __pycache__/
 *.log
 .env
 .env.*
+
+# 家族口述史：运行时数据
+data/*.sqlite
+data/*.sqlite3
+data/sessions/
+uploads/avatars/*
+uploads/photos/*
+uploads/audio/*
+uploads/submissions/*
+!uploads/**/.htaccess
+!uploads/**/.gitkeep

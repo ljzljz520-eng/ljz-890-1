@@ -1,0 +1,19 @@
+# Nginx 部署参考：放到站点 server {} 中，root 指向本项目目录
+#
+# # 数据库禁止外网访问
+# location ^~ /data/ { deny all; return 403; }
+#
+# # 上传文件禁止直接访问（统一走 media.php 鉴权）
+# location ^~ /uploads/ { deny all; return 403; }
+#
+# # PHP 交给 php-fpm
+# location ~ \.php$ {
+#     include fastcgi_params;
+#     fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+#     fastcgi_pass unix:/run/php/php8.2-fpm.sock;
+# }
+#
+# # 不记录静态资源日志
+# location ~* \.(css|js|png|jpg|jpeg|gif|webp|ico)$ {
+#     access_log off;
+# }
